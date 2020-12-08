@@ -16,87 +16,154 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    -webkit-font-smoothing:antialiased;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Popins', sans-serif;
     width: 100%;
-    /* background: var(--colorPrimary); */
+    height: 100%;
 }
 
-header {
-    background: var(--colorPrimaryDark);
+.title {
+    width: 100%;
+    height: 10%;
+    background: var(--pureBlack);
+}
+
+.brand img {
+    width: 25%;
+    height: 90%;
+    margin: .5rem;
+}
+
+.location {
+    width: 100%;
+    height: auto;
+    margin-right: 20%;
+}
+
+.location h2 {
+    color: var(--pureWhite);
+    text-align: center;
+    font-size: 120%;
 }
 
 .container {
-    max-width: 1151px;
-    padding: 5px 15px;
-}
-
-.brand-logo {
-    width: 200px;
-    height: auto;
-    margin-right: 5rem;
-}
-
-header nav {
-    padding: 1rem 0;
-}
-
-header nav .left a {
-    color: var(--pureWhite);
-    text-decoration: none;
-    margin-right: 2rem;
-    text-transform: uppercase;
-    transition: all .3s ease;
-}
-
-header nav .left a:hover {
-    color: var(--colorPrimary);
-}
-
-header nav .right {
+    width: 100%;
+    height: 95%;
+    background: var(--puregray);
     position: absolute;
     right: 0;
-    margin: 2rem;
 }
 
-.container h2 {
-    font-size: 1rem;
-    padding: 1rem 3rem;
-}
-
-.container .product {
-    padding: 2rem 3rem;
-    padding-top: 0;
-}
-
-.container .product a {
-    text-decoration: none;
-    color: var(--pureBlack);
-    transition: all .3s ease;
-}
-
-.container .product a:hover{
-    color: var(--colorPrimaryDark);
-}
-
-.container .product img {
-    width: 50px;
-    height: auto;
-    margin-right: 2rem;
-}
-
-.about {
-    line-height: .5;
-    width: 100%;
-    bottom: 5px;
-    position: fixed;
+.toolbar {
+    position: relative;
+    width: 17.5%;
+    height: 100%;
     background: var(--colorPrimary);
 }
 
-.about .content {
-    padding: 2rem;
-    color: var(--lightgray);
+.app-logo {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    background: var(--colorPrimaryDark);
+    align-items: center;
+}
+
+.app-logo img {
+    width: 35%;
+    height: 70%;
+}
+
+.work-space {
+    position: relative;
+    width: 82.5%;
+    height: 100%;
+    background: var(--pureWhite);
+}
+
+.app-name {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    background: var(--colorPrimaryDark);
+    align-items: center;
+}
+
+.app-name h2 {
+    color: var(--pureWhite);
+    font-size: 120%;
+    margin-left: 10%;
+}
+
+.main-space {
+    width: 100%;
+    height: 80%;
+}
+
+.dashboard-area {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    justify-content: center;
+}
+
+.card-1 {
+    background: var(--normalRed);
+    transition: all .3s ease;
+}
+
+.card-2 {
+    background: var(--colorSecondary);
+    transition: all .3s ease;
+}
+
+.card-1:hover {
+    background: var(--colorPrimaryDark);
+    color: var(--pureWhite);
+}
+
+.card-2:hover {
+    background: var(--colorPrimaryDark);
+    color: var(--pureWhite);
+}
+
+
+.card-1, .card-2 {
+    width: 40%;
+    height: 35%;
+    margin: 1rem;
+    padding: .5rem;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-1, .card-2 h2 {
+    font-size: 120%;
+}
+
+.card-1, .card-2 h3{
+    font-size: 100%;
+    margin-left: 2%;
+}
+
+.card-1, .card-2 h4{
+    font-size: 80%;
+}
+
+
+
+.bottom {
+    position: fixed;
+    width: 100%;
+    height: .5rem;
+    background: var(--pureBlack);
+    bottom: 0;
 }

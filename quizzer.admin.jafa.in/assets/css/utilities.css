@@ -11,14 +11,16 @@
 }
 
 .btn {
-    padding: 0.8rem 3rem;
-    font-size: 1rem;
-    font-weight: 500;
+    width: 100%;
+    padding: 0.6rem 0;
+    font-size: 60%;
     border: 2px solid transparent;
     outline: none;
     cursor: pointer;
     text-transform: uppercase;
     transition: all .3s ease;
+    text-align: center;
+    margin: .2rem 0;
 }
 
 .btn-primary {
@@ -30,6 +32,7 @@
     background: transparent;
     border-color: var(--normalRed);
     color: var(--normalRed);
+    font-size: 70%;
 }
 
 .btn-secondary {
